@@ -8,6 +8,14 @@ window.onscroll = function() {
     } else {
         header.classList.remove('navbar-fixed');
     }
+
+    // to top
+    const toTop = document.querySelector('#toTop');
+    if (window.pageYOffset) {
+        toTop.style.display = 'block';
+    } else {
+        toTop.style.display = 'none';
+    }
 };
 
 // Hamburger
